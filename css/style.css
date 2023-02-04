@@ -79,3 +79,68 @@ body {
 .center {
   padding: 0 calc(50% - 555px);
 }
+
+a {
+  color: black;
+}
+
+.top {
+  height: 900px;
+  background: url(../img/bgc.png) center/cover no-repeat;
+}
+.top__header {
+  padding-top: 30px;
+}
+.top__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.top__button {
+  width: 182px;
+  height: 50px;
+  background: #998431;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  color: #FFFFFF;
+}
+.header__top-info {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+}
+.header__nav {
+  margin-bottom: 583px;
+}
+
+.nav {
+  display: flex;
+  border-top: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+}
+.nav__link {
+  flex: 1 1 25%;
+  text-align: center;
+  font-size: 14px;
+  line-height: 150%;
+  color: #FFFFFF;
+  padding: 13px 0;
+  border-right: 1px solid #FFFFFF;
+}
+.nav__link:last-child {
+  border-right: none;
+}

@@ -1,9 +1,79 @@
 @import "null";
 
+$color-start: #FFFFFF;
 body{
 	font-family: 'Montserrat', sans-serif;
 }
 
 .center{
 	padding: 0 calc(50% - 1110px / 2);
+}
+
+a{
+	color: black;
+}
+
+.top {
+	height: 900px;
+	background: url(../img/bgc.png) center / cover no-repeat;
+	&__header {
+		padding-top: 30px;
+	}
+
+	&__buttons {
+		display: flex;
+		justify-content: center;
+		gap: 30px;
+	}
+
+	&__button {
+		width: 182px;
+		height: 50px;
+		background: #998431;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 20px;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		color: $color-start;
+	}
+}
+.header {
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		color: $color-start;
+	}
+
+	&__top-info {
+		font-weight: 500;
+		font-size: 13px;
+		line-height: 150%;
+		margin-bottom: 20px;
+		color: $color-start;
+	}
+
+	&__nav {
+		margin-bottom: 583px;
+	}
+}
+.nav {
+	display: flex;
+	border-top: 1px solid $color-start;
+	border-bottom: 1px solid $color-start;
+	&__link {
+		flex: 1 1 25%;
+		text-align: center;
+		font-size: 14px;
+		line-height: 150%;
+		color: $color-start;
+		padding: 13px 0;
+		border-right: 1px solid $color-start;
+		&:last-child{
+			border-right: none;
+		}
+	}
 }
